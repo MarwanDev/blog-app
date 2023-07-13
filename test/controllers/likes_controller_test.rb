@@ -1,5 +1,6 @@
 require 'test_helper'
 
+
 class LikesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @like = likes(:one)
