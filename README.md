@@ -24,7 +24,7 @@
 
 # 📖 Blog App <a name="Blog-App"></a>
 
-Blog App
+A blog web app used for manipulating data of users with their posts, likes and comments. The project is built using Ruby on Rails
 
 ## 🛠 Built With <a name="built-with"></a>
 
