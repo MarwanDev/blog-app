@@ -23,6 +23,7 @@ default: &default
   username: postgres
   password: ENV['POSTGRESQL_PASSWORD']
 
+
 development:
   <<: *default
   database: blog_app_development
