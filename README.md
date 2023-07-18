@@ -102,7 +102,7 @@ Example command:
 
 - GitHub: [MarwanDev](https://github.com/MarwanDev)
 - Twitter: [@marwanEg](https://twitter.com/marwaneg)
-- LinkedIn: [MarwanDev](in/marwan-abdelsattar)
+- LinkedIn: [marwan-abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
