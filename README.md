@@ -13,6 +13,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -79,6 +80,17 @@ cd my-project
 gem install
 ```
 
+### Usage
+
+To run the project, execute the following command:
+
+
+Example command:
+
+```sh
+  rails server
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -90,7 +102,7 @@ gem install
 
 - GitHub: [MarwanDev](https://github.com/MarwanDev)
 - Twitter: [@marwanEg](https://twitter.com/marwaneg)
-- LinkedIn: [MarwanDev](in/marwan-abdelsattar)
+- LinkedIn: [marwan-abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
