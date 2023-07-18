@@ -13,6 +13,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
+    - [Usage](#usage)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -77,6 +78,17 @@ To run the project, execute the folllowing in a terminal.
 ```sh
 cd my-project
 gem install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+
+Example command:
+
+```sh
+  rails server
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
