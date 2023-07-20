@@ -1,1 +1,17 @@
-<h1>User</h1>
+<div class="user-page-container">
+  <div class="user-container">
+    <%= render "shared/user", user: @user %>
+  </div>
+  <div class="bio-container">
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="posts-list">
+    <% @recent_posts.each do |post| %>
+      <%= render "shared/post", post: post, user: @user %>
+    <% end %>
+  </div>
+  <div class="all-posts-button">
+  <%= link_to "See all Posts", user_posts_path(@user), class: "all-posts-link" %>
+  </div>
+  </div>
