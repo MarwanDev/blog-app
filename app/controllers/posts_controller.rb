@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1 or /posts/1.json
-  def show 
+  def show
     @post = Post.find_by(author_id: params[:user_id], id: params[:id])
     @user = @post.author
     @comments = Post.find(@post.id).comments
