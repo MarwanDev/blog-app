@@ -1,0 +1,16 @@
+<div class="link-container">
+
+<%= link_to user_post_path(user, post), class: "no-underline" do %>
+
+  <div class="post-body">
+    <h3 class="post-title"> <%= post.title %> </h3>
+    <p class="post-text"> <%= post.text %> </p>
+
+    <div class="post-data-container">
+      <p>Comments: <%= post.comments_counter %> </p>
+      <p>Likes: <%= post.likes_counter %> </p>
+    </div>
+    </div>
+
+  <% end %>
+</div>

@@ -1,0 +1,20 @@
+<div class="link-container">
+
+  <%= link_to user_path(user), class: "no-underline" do %>
+    <div class="user-container">
+      <div class="image-container">
+        <img src=<%= user.photo %> alt="user-img">
+      </div>
+
+      <div class="user-info-container">
+        <h1>
+          <%= user.name %>
+        </h1>
+        <p>
+          Number of posts: <%= user.postsCounter %>
+        </p>
+    </div>
+  </div>
+    
+  <% end %>
+</div>

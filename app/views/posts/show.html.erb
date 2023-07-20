@@ -1,1 +1,14 @@
-<h1>Post</h1>
+<div class="post-container">
+  <div class="post-body-container">
+    <h3><%= @post.title %> by <%= @user.name %></h3>
+    <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+    <p class="post-text"><%= @post.text %></p>
+  </div>
+  <% if @comments.present? %>
+  <div class="comments-container">
+  <% @comments.each do |comment| %>
+    <%= render "shared/comment", comment: comment %>
+  <% end %>
+  </div>
+  <% end %>
+</div>
