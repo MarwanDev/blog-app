@@ -12,8 +12,7 @@
   <% end %>
 
   <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.text_field :author_id %>
+    <%= form.hidden_field :author_id, value: current_user.id %>
   </div>
 
   <div>
@@ -25,27 +24,6 @@
     <%= form.label :text, style: "display: block" %>
     <%= form.text_area :text %>
   </div>
-
-  <div>
-    <%= form.label :created_at, style: "display: block" %>
-    <%= form.date_field :created_at %>
-  </div>
-
-  <div>
-    <%= form.label :updated_at, style: "display: block" %>
-    <%= form.date_field :updated_at %>
-  </div>
-
-  <div>
-    <%= form.label :comments_counter, style: "display: block" %>
-    <%= form.number_field :comments_counter %>
-  </div>
-
-  <div>
-    <%= form.label :likes_counter, style: "display: block" %>
-    <%= form.number_field :likes_counter %>
-  </div>
-
   <div>
     <%= form.submit %>
   </div>

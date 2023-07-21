@@ -11,7 +11,9 @@ class LikesController < ApplicationController
 
   # GET /likes/new
   def new
-    @like = Like.new
+    @post = Post.find(params[:post_id])
+    @user = current_user
+    @like = Like.new(author_id: @user.id, author_id: @user.id)
   end
 
   # GET /likes/1/edit
@@ -19,7 +21,9 @@ class LikesController < ApplicationController
 
   # POST /likes or /likes.json
   def create
-    @like = Like.new(like_params)
+    @post = Post.find(params[:post_id])
+    @user = current_user
+    @like = Like.new(author_id: @user.id, author_id: @user.id)
 
     respond_to do |format|
       if @like.save

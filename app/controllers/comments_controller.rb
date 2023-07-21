@@ -12,6 +12,8 @@ class CommentsController < ApplicationController
   # GET /comments/new
   def new
     @comment = Comment.new
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:post_id])
   end
 
   # GET /comments/1/edit
@@ -19,7 +21,12 @@ class CommentsController < ApplicationController
 
   # POST /comments or /comments.json
   def create
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
+    @comment.author_id = @user.id
+    @comment.post_id = @post.id
+
 
     respond_to do |format|
       if @comment.save
