@@ -101,7 +101,6 @@
 }
 
 .comments-container {
-  margin-top: 40px;
   border: solid 1px rgb(48, 47, 47);
   border-radius: 15px;
   padding: 5px;
@@ -118,7 +117,8 @@
   display: flex;
   flex-direction: column;
   padding: 0 70px;
-  justify-content: space-between;
+  min-height: 70vh;
+  gap: 10px;
 }
 
 .post-body-container {
@@ -126,4 +126,19 @@
   border-radius: 15px;
   margin-top: 30px;
   padding-left: 10px;
+}
+
+.like-comment {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-btn {
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+  font-size: 25px;
 }
