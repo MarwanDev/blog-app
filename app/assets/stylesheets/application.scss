@@ -170,3 +170,17 @@
 .sign-in-btn {
   background-color: rgb(197, 202, 202);
 }
+
+.fields-container {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
