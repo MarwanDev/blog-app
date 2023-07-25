@@ -104,6 +104,12 @@ Example command:
 - Twitter: [@marwanEg](https://twitter.com/marwaneg)
 - LinkedIn: [marwan-abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar/)
 
+👤 **oguntayomicheal**
+
+- GitHub: [oguntayomicheal](https://github.com/oguntayomicheal)
+- Twitter: [@Oguns_micky](https://twitter.com/Oguns_micky)
+- LinkedIn: [ogunsmicky](https://www.linkedin.com/in/ogunsmicky/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
