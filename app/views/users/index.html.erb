@@ -1,9 +1,11 @@
-<div class="users-list">
-  <% @users.each do |user| %>
-    <!-- <%= render "shared/user", user: user %> -->
-    <div class="buttons-container">
-      <%= link_to "Sign Up", new_user_registration_path, class: "btn sign-up-btn" %>
-      <%= link_to "Sign In ", new_user_session_path, class: "btn sign-in-btn" %>
-    </div>
-  <% end %>
+<% if user_signed_in? %> 
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+<% else %>
+  <%= button_to "Sign in", new_user_session_path %> 
+<% end %>
+
+<div class="users">
+    <% @users.each do |user| %>
+        <%= render 'shared/user', user: user %>
+        <% end %>
 </div>
