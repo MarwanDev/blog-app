@@ -51,8 +51,9 @@
 .users-list {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
 }
 
 .user-page-container {
@@ -141,4 +142,45 @@
   border-radius: 15px;
   margin: 0 auto;
   font-size: 25px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.sign-up-btn,
+.sign-in-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.sign-up-btn {
+  background-color: azure;
+}
+
+.sign-in-btn {
+  background-color: rgb(197, 202, 202);
+}
+
+.fields-container {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
