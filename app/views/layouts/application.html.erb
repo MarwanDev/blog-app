@@ -12,6 +12,10 @@
   </head>
 
   <body>
+  <% if user_signed_in? %> 
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "comment-btn" %> 
+  <% end %>
+
     <%= yield %>
   </body>
 </html>

@@ -17,4 +17,8 @@ class User < ApplicationRecord
 
     errors.add(:postsCounter, 'must be greater than or equal 0')
   end
+
+  def admin?
+    role == 'admin'
+  end
 end

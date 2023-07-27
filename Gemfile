@@ -74,5 +74,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
-gem "devise", "~> 4.9"
+gem 'cancancan'
+gem 'devise', '~> 4.9'
+gem 'letter_opener', group: :development

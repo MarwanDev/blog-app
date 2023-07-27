@@ -16,5 +16,8 @@
       <%= form.submit 'Like', class: "comment-btn" %>
     <% end %>
       <%= link_to "Comment", new_user_post_comment_path(@post.author.id, @post.id), class: "comment-btn" %>
-    </div>
+        <% if can? :destroy, @post %>
+          <%= button_to "Delete", user_post_path(@user, @post), method: :delete, class: "comment-btn" %>
+        <% end %>
+      </div>
 </div>
