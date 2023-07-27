@@ -11,9 +11,9 @@ RSpec.describe 'posts index Page', type: :feature do
 
   it 'displays information of all posts of a certain user' do
     post = user.posts.create(title: 'Wazzaa', text: 'Hi there fellas', comments_counter: 5, likes_counter: 3)
-    comment1 = post.comments.create(text: 'hey', post: post, author: user)
-    comment2 = post.comments.create(text: 'hey', post: post, author: user)
-    comment3 = post.comments.create(text: 'hey', post: post, author: user)
+    comment1 = post.comments.create(text: 'hey', post:, author: user)
+    comment2 = post.comments.create(text: 'hey', post:, author: user)
+    comment3 = post.comments.create(text: 'hey', post:, author: user)
     visit user_post_path(user, post)
     expect(page).to have_content("#{post.title} by #{user.name}")
     expect(page).to have_content("Comments: #{post.comments_counter}")

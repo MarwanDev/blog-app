@@ -53,10 +53,13 @@ class PostsController < ApplicationController
 
   # DELETE /posts/1 or /posts/1.json
   def destroy
-    @post.destroy
+    @user = current_user
+    @post = @user.posts.find_by(id: params[:id])
 
+    puts @post.inspect
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      @post.destroy
+      format.html { redirect_to user_posts_path(@user), alert: 'Post Succesfully Destroyed.' }
       format.json { head :no_content }
     end
   end

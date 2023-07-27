@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable, :confirmable
   validates :name, presence: true
   validate :posts_counter_greater_than_zero
 
@@ -16,5 +16,9 @@ class User < ApplicationRecord
     return unless postsCounter.present? && postsCounter.negative?
 
     errors.add(:postsCounter, 'must be greater than or equal 0')
+  end
+
+  def admin?
+    role == 'admin'
   end
 end

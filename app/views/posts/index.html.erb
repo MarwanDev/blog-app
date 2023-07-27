@@ -2,6 +2,9 @@
   <div class="user-container">
     <%= render "shared/user", user: @user %>
   </div>
+  <% if @user == current_user && can?(:create, Post) %>
+    <%= link_to "Add Post", new_user_post_path(@user), class: "sign-up-btn" %>
+  <% end %>
   <div class="posts-list">
     <% @posts.each do |post| %>
     <div class="post-container">
@@ -14,9 +17,8 @@
       <% end %>
       </div>
       <% end %>
-      
-    </div> <!-- move the closing tag here -->
+    </div>
     <% end %>
   </div>
-  <button type="button">paginton</button>
+  <button type="button" class="comment-btn">paginton</button>
 </div>
