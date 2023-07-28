@@ -5,7 +5,7 @@
 
 - [Blog App](#Blog-App)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Blog App ](#-Ruby-Capstons-Project-)
+- [📖 About the project ](#about-project)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -23,7 +23,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Blog App <a name="Blog-App"></a>
+# 📖 Blog App <a name="about-project"></a>
 
 A blog web app used for manipulating data of users with their posts, likes and comments. The project is built using Ruby on Rails
 
@@ -103,12 +103,6 @@ Example command:
 - GitHub: [MarwanDev](https://github.com/MarwanDev)
 - Twitter: [@marwanEg](https://twitter.com/marwaneg)
 - LinkedIn: [marwan-abdelsattar](https://www.linkedin.com/in/marwan-abdelsattar/)
-
-👤 **oguntayomicheal**
-
-- GitHub: [oguntayomicheal](https://github.com/oguntayomicheal)
-- Twitter: [@Oguns_micky](https://twitter.com/Oguns_micky)
-- LinkedIn: [ogunsmicky](https://www.linkedin.com/in/ogunsmicky/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
